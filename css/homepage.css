@@ -17,3 +17,15 @@
   .two-column>*:nth-child(2) {
     flex: 2;
   }
+
+  img {
+    float: left;
+  }
+
+  .left-margin {
+    margin-left: 300px;
+  }
+
+  .spaced-paragraph {
+    line-height: 1.5; /* Adjust the value as needed, 1.6 is a common value for readability */
+}
