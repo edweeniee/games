@@ -22,6 +22,8 @@ h1, h2 {
   border: solid 1px #ffa600;
   border-radius: 10px;
   background-color: #FFF4C8; 
+  display: flex;
+  flex: 1;
 }
 
 .minor-section h2 {
