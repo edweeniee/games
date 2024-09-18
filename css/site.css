@@ -26,6 +26,8 @@ h1, h2 {
   width: 100%; /* Ensure the container spans the full width */
   max-width: 100%; /* Prevents container from exceeding parent width */
   justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Center content vertically if needed */
+  overflow: hidden; /* Hide overflow if needed */
 }
 
 .minor-section img {

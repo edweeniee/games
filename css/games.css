@@ -132,12 +132,3 @@ nav a:hover {
   width: 100%;  /* Make sure the video doesn't overflow the container */
   aspect-ratio: 16/9;
 }
-
-.minor-section {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: flex-start; /* Center content vertically if needed */
-  width: 100%; /* Ensure the container spans the full width available */
-  max-width: 100%; /* Ensure container does not exceed its parent’s width */
-  overflow: hidden; /* Hide overflow if needed */
-}
