@@ -1,5 +1,5 @@
 .image-wrapper {
-  width: 100%x;
+  width: 100%;
   padding: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -10,16 +10,12 @@
   flex-direction: row;
 }
 
-.two-column>*:nth-child(1) {
-  flex: 1;
+.two-column > *:nth-child(1) {
+  flex: 1 1 0;
 }
 
-.two-column>*:nth-child(2) {
-  flex: 2;
-}
-
-img {
-  float: left;
+.two-column > *:nth-child(2) {
+  flex: 2 1 0;
 }
 
 .left-margin {
@@ -59,8 +55,15 @@ nav a:hover {
   margin: 10px; /* Add margin with units */
   padding: 10px; /* Add padding with units */
   line-height: 2; /* Add line-height with units */
-}
-
-.minor-section p {
   font-size: 24px;
 }
+
+.minor-section {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Center content vertically if needed */
+  width: 100%; /* Ensure the container spans the full width available */
+  max-width: 100%; /* Ensure container does not exceed its parent’s width */
+  overflow: hidden; /* Hide overflow if needed */
+}
+

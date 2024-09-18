@@ -1,5 +1,5 @@
 .image-wrapper {
-  width: 100%x;
+  width: 100%;
   padding: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -11,11 +11,11 @@
 }
 
 .two-column>*:nth-child(1) {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 .two-column>*:nth-child(2) {
-  flex: 2;
+  flex: 2 1 0;
 }
 
 img {

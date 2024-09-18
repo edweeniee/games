@@ -1,5 +1,5 @@
 .image-wrapper {
-  width: 100%x;
+  width: 100%;
   padding: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -11,15 +11,11 @@
 }
 
 .two-column>*:nth-child(1) {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 .two-column>*:nth-child(2) {
-  flex: 2;
-}
-
-img {
-  float: left;
+  flex: 2 1 0;
 }
 
 .left-margin {
@@ -95,17 +91,53 @@ nav a:hover {
   transform: scale(1.01); /* Slightly enlarge the item on hover */
 }
 
-.text-context h1, .text-context h2, .text-context p {
+.text-context h1, .text-context h2 {
   margin: 10; /* Remove default margins */
   padding: 10; /* Remove default padding */
   line-height: 1.5;
+}
+
+.text-context p {
+  margin: 10; /* Remove default margins */
+  padding: 10; /* Remove default padding */
+  line-height: 1.5;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.text-context-article h1, .text-context-article h2 {
+  margin: 10; /* Remove default margins */
+  padding: 10; /* Remove default padding */
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.text-context-article p {
+  margin: 10; /* Remove default margins */
+  padding: 10; /* Remove default padding */
+  line-height: 1.5;
+  font-size: 24px;
 }
 
 .text-content {
   flex: 1; /* Text content takes the remaining 70% of the width */
   display: flex;
   flex-direction: column; /* Stack headings and paragraphs vertically */
-  justify-content: center; /* Center content vertically */
   padding: 20px; /* Add padding around text content */
   box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.minor-section iframe {
+  flex: 1;
+  width: 100%;  /* Make sure the video doesn't overflow the container */
+  aspect-ratio: 16/9;
+}
+
+.minor-section {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Center content vertically if needed */
+  width: 100%; /* Ensure the container spans the full width available */
+  max-width: 100%; /* Ensure container does not exceed its parent’s width */
+  overflow: hidden; /* Hide overflow if needed */
 }
